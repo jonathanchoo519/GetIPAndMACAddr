@@ -22,11 +22,10 @@
 
 	type Flags uint
 
-``const (
-    FlagUp           Flags = 1 << iota // 接口在活动状态
-    FlagBroadcast                      // 接口支持广播
-    FlagLoopback                       // 接口是环回的
-    FlagPointToPoint                   // 接口是点对点的
-    FlagMulticast                      // 接口支持组播
-)
-``
+	const (
+		FlagUp           Flags = 1 << iota // 接口在活动状态
+		FlagBroadcast                      // 接口支持广播
+		FlagLoopback                       // 接口是环回的
+		FlagPointToPoint                   // 接口是点对点的
+		FlagMulticast                      // 接口支持组播
+	)
